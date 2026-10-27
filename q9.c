@@ -4,6 +4,7 @@ int main(void) {
     int x, y;
     scanf("%d %d", &x, &y);
 
+    // Verificar quadrante
     if (x > 0 && y > 0)
         printf("Q1");
     else if (x < 0 && y > 0)
@@ -12,6 +13,7 @@ int main(void) {
         printf("Q3");
     else if (x > 0 && y < 0)
         printf("Q4");
+    // Verificar eixo ou origem
     else if (!x && y)
         printf("Eixo Y");
     else if (x && !y)
